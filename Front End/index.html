@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reto5</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="myCategory.js"></script>
+<script type="text/javascript" src="myPartyroom.js"></script>
+<script type="text/javascript" src="myScript.js"></script>
+<script type="text/javascript" src="myMessage.js"></script>
+<script type="text/javascript" src="myReservation.js"></script>
+<script type="text/javascript" src="myAdmin.js"></script>
+<script type="text/javascript" src="myScore.js"></script>
+<body>
+
+    <h1>Registro de categorías</h1>
+
+    Id de la categoría: <input type="number" id="idCategory"><br>
+    Nombre de la categoría: <input type="text" id="nameCategory"><br>
+    Descripción de la categoría: <input type="text" id="descriptionCategory"><br>
+    
+    
+    <button onclick="guardarCategory()">GUARDAR CATEGORÍA</button>
+    <button onclick="editarCategory()">ACTUALIZAR CATEGORÍA</button>
+    <button onclick="leerCategory()">DETALLE DE LAS CATEGORÍAS</button>
+    
+    <div id="listCategory">
+    
+    </div>
+
+    <h1>Registro de clientes</h1>
+
+    Id del cliente: <input type="number" id="idCliente"><br>
+    Nombre del cliente: <input type="text" id="nombreCliente"><br>
+    Correo de cliente: <input type="text" id="emailCliente"><br>
+    Password de cliente: <input type="text" id="passwordCliente"><br>
+    Edad de cliente: <input type="number" id="edadCliente"><br>
+    
+    <button onclick="guardarCliente()">GUARDAR CLIENTE</button>
+    <button onclick="editarCliente()">ACTUALIZAR CLIENTE</button>
+    <button onclick="leerClientes()">DETALLE DE LOS CLIENTES</button>
+    
+    <div id="listClientes">
+    
+    </div>
+
+
+    <h1>Registro de salones</h1>
+
+    Id del salón: <input type="number" id="idSalon"><br>
+    Nombre del salón: <input type="text" id="nameSalon"><br>
+    Propietario del salón: <input type="text" id="ownerSalon"><br>
+    Capacidad del salón: <input type="number" id="capacitySalon"><br>
+    Descripción del salón: <input type="number" id="descriptionSalon"><br>
+    
+    
+    <button onclick="guardarSalon()">GUARDAR SALÓN</button>
+    <button onclick="editarSalon()">ACTUALIZAR SALÓN</button>
+    <button onclick="leerSalones()">DETALLES DE LOS SALONES</button>
+    
+    <div id="listSalones">
+    
+    </div>
+
+    <h1>Registro de mensajes</h1>
+
+    Id del mensaje: <input type="number" id="idMensaje"><br>
+    Mensaje: <input type="text" id="messagetextMensaje"><br>
+    
+    <button onclick="guardarMensaje()">GUARDAR MENSAJE</button>
+    <button onclick="editarMensaje()">ACTUALIZAR MENSAJE</button>
+    <button onclick="leerMensajes()">DETALLES DE LOS MENSAJES</button>
+    
+    <div id="listMensajes">
+    
+    </div>
+
+    <h1>Creación de reservas</h1>
+
+    Id de la reserva: <input type="number" id="idReservation"><br>
+    Fecha de inicio: <input type="date" id="startDateReservation"><br>
+    Fecha de devolución: <input type="date" id="devolutionDateReservation"><br>
+    Status de la reserva: <input type="text" id="statusReservation"><br>
+    
+    <button onclick="guardarReservation()">GUARDAR RESERVA</button>
+    <button onclick="editarReservation()">ACTUALIZAR RESERVA</button>
+    <button onclick="leerReservations()">DETALLES DE LAS RESERVAS</button>
+    
+    <div id="listReservations">
+    
+    </div>
+    
+    <h1>Registro de Administradores</h1>
+
+    Id del administrador: <input type="number" id="idAdmin"><br>
+    Nombre del administrador: <input type="text" id="nombreAdmin"><br>
+    Correo del administrador: <input type="text" id="emailAdmin"><br>
+    Password del administrador: <input type="text" id="passwordAdmin"><br>
+       
+    <button onclick="guardarAdmin()">GUARDAR ADMINISTRADOR</button>
+    <button onclick="editarAdmin()">ACTUALIZAR ADMINISTRADOR</button>
+    <button onclick="leerAdmins()">DETALLE DE LOS ADMINISTRADORES</button>
+    
+    <div id="listAdmins">
+    
+    </div>
+
+    <h1>Registro de calificación de reservas</h1>
+
+    Id de la reserva: <input type="number" id="idScore"><br>
+    Calificación de la reserva: <input type="number" id="scoreScore"><br>
+    Texto de la reserva: <input type="text" id="scoretextScore"><br>
+    
+    <button onclick="guardarScore()">GUARDAR CALIFICACION DE LA RESERVA</button>
+    <button onclick="editarScore()">ACTUALIZAR CALIFICACION DE LA RESERVA</button>
+    <button onclick="leerScores()">DETALLES DE LAS CALIFICACIONES DE LAS RESERVAS</button>
+    
+    <div id="listScores">
+    
+    </div>
+
+</body>
+</html>
